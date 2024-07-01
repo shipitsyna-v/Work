@@ -1,7 +1,7 @@
 ﻿using chessapp;
 using System;
 
-namespace ChessApp
+namespace chessapp
 {
     class Program
     {

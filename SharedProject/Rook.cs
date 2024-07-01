@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace chessapp.Classes
+namespace SharedProject
 {
     public class Rook : BaseClass //ладья
     {
@@ -12,7 +12,7 @@ namespace chessapp.Classes
 
         public override bool Attack(BaseClass other)
         {
-            return X == other.X || Y == other.Y; //вертикально и горизонтально
+            return (X == other.X || Y == other.Y); //вертикально и горизонтально
         }
     }
 }

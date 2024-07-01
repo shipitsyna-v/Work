@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace chessapp.classes
+namespace chessapp.Classes
 {
     public class Knight : BaseClass
     {
@@ -14,7 +14,7 @@ namespace chessapp.classes
         {
             int dx = Math.Abs(other.X - X);
             int dy = Math.Abs(other.Y - Y);
-            return (dx == 2 && dy == 1) || (dx == 1 && dy == 2);
+            return dx == 2 && dy == 1 || dx == 1 && dy == 2;
         }
     }
 }

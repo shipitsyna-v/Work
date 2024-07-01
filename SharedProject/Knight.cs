@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace chessapp.Classes
+namespace SharedProject
 {
-    public class King : BaseClass
+    public class Knight : BaseClass
     {
-        public King(int x, int y) : base(x, y) { }
+        public Knight(int x, int y) : base(x, y) { }
 
         public override bool Attack(BaseClass other)
         {
             int dx = Math.Abs(other.X - X);
             int dy = Math.Abs(other.Y - Y);
-            return dx <= 1 && dy <= 1;
+            return (dx == 2 && dy == 1) || (dx == 1 && dy == 2);
         }
     }
 }
